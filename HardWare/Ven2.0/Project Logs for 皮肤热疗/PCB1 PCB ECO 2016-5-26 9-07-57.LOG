@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VCC3.3 Pin=R7-2
+Removed Pin From Net: NetName=AD Pin=U1-14
+Added Pin To Net: NetName=VBAT Pin=R7-2
+Added Pin To Net: NetName=NetC6_2 Pin=U1-14
+Change Net Name : Old Net Name=AD New Net Name=NetK1_3
+Change Net Name : Old Net Name=NetC6_2 New Net Name=AD

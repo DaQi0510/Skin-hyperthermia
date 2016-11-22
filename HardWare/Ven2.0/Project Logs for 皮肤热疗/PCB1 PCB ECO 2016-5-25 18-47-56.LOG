@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=LED4 Pin=U1-33
+Added Pin To Net: NetName=LED3 Pin=U1-34
+Added Pin To Net: NetName=LED2 Pin=U1-35
+Added Pin To Net: NetName=LED1 Pin=U1-36
+Added Pin To Net: NetName=PA11 Pin=U1-44
+Added Net: Name=PA11
+Added Pin To Net: NetName=PA12 Pin=U1-45
+Added Net: Name=PA12

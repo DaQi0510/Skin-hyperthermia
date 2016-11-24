@@ -3,21 +3,31 @@
 <META http-equiv="Content-Type" content="text/html">
 <style type="text/css">
 		h1, h2, h3, h4, h5, h6 {
-			font-family : sans-serif;
-			color : white;
-			background-color : #21489e;
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
 			padding: 0.3em;
 		}
-		body {
-			font-family : verdana;
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
 		}
+
+		body {
+			font-family : segoe ui;
+		}
+
 		td, th {
 			padding: 0.5em;
-			text-align : center;
-			width : 18%;
+			text-align : left;
+			width: 10em;
 		}
 		th {
-			background-color : #A6CAF0;
+			background-color : #EEEEEE;
 
 		}
 		th.column1, td.column1 {
@@ -26,120 +36,99 @@
 		}
 		table {
 			width : 100%;
+			font-size: 0.9em;
 		}
-		
-		.DRC_summary_header {							
+
+		.DRC_summary_header {
 			padding-bottom : 0.1em;
-			border : 0px solid black;							
-			width: 100%;
-                        align: right;
-                        
-		}
-
-		.DRC_summary_header_col1, 
-		.DRC_summary_header_col2, 
-		.DRC_summary_header_col3
-		{
-			color : black;
-			font-size:150%;
-                        padding : 0em;
-			padding-top : 0.2em;
-			padding-bottom 0.2: 0em;
 			border : 0px solid black;
-			width : auto;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
 			vertical-align: top;
-			font-weight: bold;				
-		}
-		
-		.DRC_summary_header_col1 	
-		{		                       
-			text-align: right;
-                        width: auto;	
+			text-align: left;
 		}
 
-		.DRC_summary_header_col2 	
-		{		
-			text-align: center;	
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
 		}
 
-		.DRC_summary_header_col3 	
-		{		
-			text-align: left;	
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
 		}
 
 
-		
-		.header_holder
-		{
-		Width = 100%;
-		border = 0px solid green;
-		padding = 0;
-		}
-		
-		
-		
 		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
-                {
-			left:0;
-			top:0;
-			padding-top : 0.1em;			
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
 			border : 0px solid black;
 			width : 100%;
-			vertical-align: top
+			vertical-align: top;
+			text-align: left;
+		}
 
-		}
-		.front_matter {	
-			
-			margin-top: 5px;
- 			margin-left: 0px;					 			
- 			horizontal-align: left;
-		}
-				
-		
 		.front_matter_column1 {
-			width : 10em;	
-			text-align  : right;
-			padding-right:0.1em;
-			
+			width : 8em;
+			font-weight: bold;
 		}
-		
+
 		.front_matter_column2 {
-                        width: 0.1em;
-			align: center;
-			text-align : center;
-			margin-right  : 0.1em;	
-			margin-left   : 0.1em;
+			width: 0.1em;
 		}
+
 		.front_matter_column3 {
-			width         : auto;  
-			text-align    : left;	
-			margin-right  : 0.5em;				
+			width : auto;
 		}
-		
+
 		.total_column1, .total_column {
 			font-weight : bold;
 		}
 		.total_column1 {
-			text-align : right;
+			text-align : left;
 		}
 		.warning, .error {
 			color : red;
 			font-weight : bold;
 		}
 		tr.onmouseout_odd {
-			background-color : #EEEEE0 
+			background-color : #white;
 		}
 		tr.onmouseout_even { 
-			background-color : #F3F3E3   
+			background-color : #FAFAFA;
 		}
 		tr.onmouseover_odd, tr.onmouseover_even { 
-			background-color : lightYellow
+			background-color : #EEEEEE;
 		} 
 		a:link, a:visited, .q a:link,.q a:active,.q {
 			color: #21489e; 
 		}
 		a:link.callback, a:visited.callback { 
-			color: #008000 
+			color: #21489e;
 		}
 		a:link.customize, a:visited.customize {
 			color: #C0C0C0;
@@ -219,49 +208,49 @@
 				}
 			}
 		}
-	</script></head>
+	</script><title>Design Rule Verification Report</title>
+</head>
 <body onload=""><img ALT="Altium" src="
-			file://D:\ALTIUM\Templates\AD-rgb_logo_223x64.gif
-		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+			file://D:\AD16\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
 <table class="header_holder">
-<td Style="width:70%">
+<td class="column1">
 <table class="front_matter">
 <tr class="front_matter">
-<td class="front_matter_column1">Date</td>
-<td class="front_matter_column2">:</td>
-<td class="front_matter_column3">2016/5/26</td>
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2016/11/24</td>
 </tr>
 <tr class="front_matter">
-<td class="front_matter_column1">Time</td>
-<td class="front_matter_column2">:</td>
-<td class="front_matter_column3">10:24:30</td>
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">22:48:36</td>
 </tr>
 <tr class="front_matter">
-<td class="front_matter_column1">Elapsed Time</td>
-<td class="front_matter_column2">:</td>
-<td class="front_matter_column3">00:00:03</td>
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
 </tr>
 <tr class="front_matter">
-<td class="front_matter_column1">Filename</td>
-<td class="front_matter_column2">:</td>
-<td class="front_matter_column3"><a href="file:///E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc" class="file"><acronym title="E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc">E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc</acronym></a></td>
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc" class="file"><acronym title="F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc">F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc</acronym></a></td>
 </tr>
 </table>
 </td>
-<td Style="Width:30%">
+<td class="column2">
 <table class="DRC_summary_header">
 <tr>
-<td class="DRC_summary_header_col1">Warnings</td>
-<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
 <td class="DRC_summary_header_col3">0</td></tr>
 <tr>
-<td class="DRC_summary_header_col1">Rule Violations</td>
-<td class="DRC_summary_header_col2">:</td>
-<td class="DRC_summary_header_col3" style="color : red">9</td></tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">14</td></tr>
 </table>
 </td>
-</table>
-<hr><a name="IDASACOK"><h2>Summary</h2></a><table>
+</table><a name="ID22I3PPZ51AB4G1NN1USP3FFSWKNV0VH4UMRJOUEPVVN5HMA1TGHJ"><h2>Summary</h2></a><table>
 <tr>
 <th class="column1">Warnings</th>
 <th class="column2">Count</th>
@@ -276,97 +265,106 @@
 <th class="column2">Count</th>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDAEBCOK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column1"><a href="#IDX2CFMAWEUIMNHBJWE1GSUA2NCEJ3JMKUCI3NTCNQ1UIKAEECQJAC">Net Antennae (Tolerance=0mil) (All)</a></td>
 <td class="column2">0</td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDAKBCOK">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column1"><a href="#IDQP12VHBP5NFFILONZ01OGOMZUGB4MOWX2EXSUJMFCSVFNKGM15NN">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQPFQT0VVGJETOVOCROI1UNYLRGI1TW53PKPR2HCAYQZIIYSOCCF">Silk To Solder Mask (Clearance=0mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOAEFO5LAQXSIGKD5FIDJMXSWOGF04EGMMNNNNANQ4KV22IBBL1OD">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPPHEDJFND4ZHJBUPQJ0BSC5WGS1JL53GJA2FH2CKHAWTPHWW3O">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0NWTNQCFGK2ZGPFPZTCJVGSMBJYXHUZYLATXTTJGA54ASUGY3ELH">Hole Size Constraint (Min=1mil) (Max=1000mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID23GS3WBQLQREL2HH44LPIBZKPKAUQG4NAJGUUPKW1BVXPIX55JYM">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDK5WUMSLCMHYSEZE3UC4HEND25JHWYZXRLTHQLAJE4SGP2GT0OJSB">Width Constraint (Min=8mil) (Max=50mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA5GZ5OWVJ43XF1AWWRRBQ12IBNRUFNI2QVZ1L2PT3VDMVXNIVCCO">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI4NSUTOFUTSER3C0TE0VS2PKNDAOTMIPPM3FWGUFAQ44C41PVFG">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBFWPLCEOGVCZEAZD051LLH0PMDOWN2114V3Z43FQM234MSDQQ5O">Un-Routed Net Constraint ( (All) )</a></td>
 <td class="column2">3</td>
 </tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDACCCOK">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
-<td class="column2">6</td>
-</tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDA4DCOK">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDAEECOK">Width Constraint (Min=8mil) (Max=50mil) (Preferred=10mil) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDAKECOK">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDAQECOK">Hole Size Constraint (Min=1mil) (Max=1000mil) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDAWECOK">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDA2ECOK">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDACFCOK">Silkscreen Over Component Pads (Clearance=0mil) (All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDAIFCOK">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDAOFCOK">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column1"><a href="#ID1BMRI5VJRUTBDAYMRZZRSS3KHJX4ARDSUAYSBUOSQPLSDMI0KYFC">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
 <td class="column2">0</td>
 </tr>
 <tr>
 <td style="font-weight : bold; text-align : right" class="column1">Total</td>
-<td style="font-weight : bold" class="column2">9</td>
+<td style="font-weight : bold" class="column2">14</td>
 </tr>
-</table><br><hr><a name="IDAKBCOK"><table>
+</table><br><a name="IDI4NSUTOFUTSER3C0TE0VS2PKNDAOTMIPPM3FWGUFAQ44C41PVFG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=6112.407mil|Location2.Y=6123.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=6112.407mil|Location2.Y=6123.657mil|Absolute=True">Clearance Constraint: (9.843mil &lt; 10mil) Between Pad LED5-3(366.142mil,4264.764mil) on Top Layer And Pad LED5-4(366.142mil,4231.299mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=5876.186mil|Location2.Y=5887.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=5876.186mil|Location2.Y=5887.436mil|Absolute=True">Clearance Constraint: (9.843mil &lt; 10mil) Between Pad LED4-3(366.142mil,4028.543mil) on Top Layer And Pad LED4-4(366.142mil,3995.079mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=5639.966mil|Location2.Y=5651.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=5639.966mil|Location2.Y=5651.216mil|Absolute=True">Clearance Constraint: (9.843mil &lt; 10mil) Between Pad LED3-3(366.142mil,3792.323mil) on Top Layer And Pad LED3-4(366.142mil,3758.858mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=5403.745mil|Location2.Y=5414.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.674mil|Location2.X=3341.924mil|Location1.Y=5403.745mil|Location2.Y=5414.995mil|Absolute=True">Clearance Constraint: (9.843mil &lt; 10mil) Between Pad LED2-3(366.142mil,3556.102mil) on Top Layer And Pad LED2-4(366.142mil,3522.638mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.675mil|Location2.X=3341.925mil|Location1.Y=3739.966mil|Location2.Y=3751.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.675mil|Location2.X=3341.925mil|Location1.Y=3739.966mil|Location2.Y=3751.216mil|Absolute=True">Clearance Constraint: (9.843mil &lt; 10mil) Between Pad LED1-3(366.142mil,1892.323mil) on Top Layer And Pad LED1-4(366.142mil,1858.859mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.702mil|Location2.X=3104.369mil|Location1.Y=4250.025mil|Location2.Y=4257.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.702mil|Location2.X=3104.369mil|Location1.Y=4250.025mil|Location2.Y=4257.692mil|Absolute=True">Clearance Constraint: (Collision &lt; 10mil) Between Track (116.535mil,2168.11mil)(116.535mil,5823.622mil) on Keep-Out Layer And Pad K1-4(157.48mil,2374.016mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3527.348mil|Location2.X=3535.015mil|Location1.Y=4250.025mil|Location2.Y=4257.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3527.348mil|Location2.X=3535.015mil|Location1.Y=4250.025mil|Location2.Y=4257.692mil|Absolute=True">Clearance Constraint: (Collision &lt; 10mil) Between Track (552.756mil,2168.11mil)(552.756mil,5823.622mil) on Keep-Out Layer And Pad K1-3(511.811mil,2374.016mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3527.348mil|Location2.X=3535.015mil|Location1.Y=4427.19mil|Location2.Y=4434.857mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3527.348mil|Location2.X=3535.015mil|Location1.Y=4427.19mil|Location2.Y=4434.857mil|Absolute=True">Clearance Constraint: (Collision &lt; 10mil) Between Track (552.756mil,2168.11mil)(552.756mil,5823.622mil) on Keep-Out Layer And Pad K1-1(511.811mil,2551.181mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.702mil|Location2.X=3104.369mil|Location1.Y=4427.19mil|Location2.Y=4434.857mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.702mil|Location2.X=3104.369mil|Location1.Y=4427.19mil|Location2.Y=4434.857mil|Absolute=True">Clearance Constraint: (Collision &lt; 10mil) Between Track (116.535mil,2168.11mil)(116.535mil,5823.622mil) on Keep-Out Layer And Pad K1-2(157.48mil,2551.181mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3368.223mil|Location2.X=3379.473mil|Location1.Y=2013.667mil|Location2.Y=2024.917mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3368.223mil|Location2.X=3379.473mil|Location1.Y=2013.667mil|Location2.Y=2024.917mil|Absolute=True">Clearance Constraint: (6.2mil &lt; 10mil) Between Pad J1-MH1(409.449mil,149.292mil) on Multi-Layer And Pad J1-5(385.827mil,196.85mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3249.818mil|Location2.X=3261.068mil|Location1.Y=2013.667mil|Location2.Y=2024.917mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3249.818mil|Location2.X=3261.068mil|Location1.Y=2013.667mil|Location2.Y=2024.917mil|Absolute=True">Clearance Constraint: (6.2mil &lt; 10mil) Between Pad J1-MH2(259.843mil,149.292mil) on Multi-Layer And Pad J1-1(283.465mil,196.85mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBFWPLCEOGVCZEAZD051LLH0PMDOWN2114V3Z43FQM234MSDQQ5O"><table>
 <tr>
 <th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3137.48mil|Location2.X=3472mil|Location1.Y=4244.016mil|Location2.Y=4244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3137.48mil|Location2.X=3472mil|Location1.Y=4244.016mil|Location2.Y=4244mil|Absolute=True">Un-Routed Net Constraint: Net NetK1_3 Between Pad K1-4 (157.48,2374.016mil) And Track on layer Bottom Layer (492,2374mil)</acronym></a><br></td>
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3097.11mil|Location2.X=3532.181mil|Location1.Y=4400.496mil|Location2.Y=4441.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3097.11mil|Location2.X=3532.181mil|Location1.Y=4400.496mil|Location2.Y=4441.866mil|Absolute=True">Un-Routed Net Constraint: Net AD Between Pad K1-2(157.48mil,2551.181mil) on Top Layer And Pad K1-1(511.811mil,2551.181mil) on Top Layer </acronym></a><br></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3360mil|Location2.X=3442.598mil|Location1.Y=4810mil|Location2.Y=4939.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3360mil|Location2.X=3442.598mil|Location1.Y=4810mil|Location2.Y=4939.291mil|Absolute=True">Un-Routed Net Constraint: Net KEY Between Pad C19-1 (380,2940mil) And Pad K2-4 (462.598,3069.291mil)</acronym></a><br></td>
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3343.252mil|Location2.X=3473.126mil|Location1.Y=4791.283mil|Location2.Y=4969.819mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3343.252mil|Location2.X=3473.126mil|Location1.Y=4791.283mil|Location2.Y=4969.819mil|Absolute=True">Un-Routed Net Constraint: Net KEY Between Pad C19-1(380mil,2940mil) on Top Layer And Pad K2-4(462.598mil,3069.291mil) on Multi-Layer </acronym></a><br></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3137.48mil|Location2.X=3461.742mil|Location1.Y=4421.181mil|Location2.Y=4410.797mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3137.48mil|Location2.X=3461.742mil|Location1.Y=4421.181mil|Location2.Y=4410.797mil|Absolute=True">Un-Routed Net Constraint: Net AD Between Pad K1-2 (157.48,2551.181mil) And Arc on layer Top Layer (481.742,2540.797mil)</acronym></a><br></td>
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E5%AF%B9%E5%A4%96%E9%83%A8%E5%88%86%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3097.11mil|Location2.X=3532.181mil|Location1.Y=4223.331mil|Location2.Y=4264.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3097.11mil|Location2.X=3532.181mil|Location1.Y=4223.331mil|Location2.Y=4264.701mil|Absolute=True">Un-Routed Net Constraint: Net NetK1_3 Between Pad K1-4(157.48mil,2374.016mil) on Top Layer And Pad K1-3(511.811mil,2374.016mil) on Top Layer </acronym></a><br></td>
 </tr>
-</table></a><a href="#top">Back to top</a><br><br><a name="IDACCCOK"><table>
-<tr>
-<th style="text-align : left" colspan="2" class="rule">Clearance Constraint (Gap=10mil) (All),(All)</th>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3223.343mil|Location2.X=3256.343mil|Location1.Y=2002.792mil|Location2.Y=2035.792mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3223.343mil|Location2.X=3256.343mil|Location1.Y=2002.792mil|Location2.Y=2035.792mil|Absolute=True">Pad J1-MH2(259.843mil,149.292mil)  Multi-Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3254.543mil|Location2.X=3272.386mil|Location1.Y=2003.795mil|Location2.Y=2129.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3254.543mil|Location2.X=3272.386mil|Location1.Y=2003.795mil|Location2.Y=2129.905mil|Absolute=True">Pad J1-1(283.465mil,196.85mil)  Top Layer</acronym></a></td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3372.949mil|Location2.X=3405.949mil|Location1.Y=2002.792mil|Location2.Y=2035.792mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3372.949mil|Location2.X=3405.949mil|Location1.Y=2002.792mil|Location2.Y=2035.792mil|Absolute=True">Pad J1-MH1(409.449mil,149.292mil)  Multi-Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3356.905mil|Location2.X=3374.748mil|Location1.Y=2003.795mil|Location2.Y=2129.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3356.905mil|Location2.X=3374.748mil|Location1.Y=2003.795mil|Location2.Y=2129.905mil|Absolute=True">Pad J1-5(385.827mil,196.85mil)  Top Layer</acronym></a></td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.535mil|Location2.X=3100.535mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.535mil|Location2.X=3100.535mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True">Track (116.535mil,2168.11mil)(116.535mil,5873.622mil)  Keep-Out Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.11mil|Location2.X=3180.85mil|Location1.Y=4397.496mil|Location2.Y=4444.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.11mil|Location2.X=3180.85mil|Location1.Y=4397.496mil|Location2.Y=4444.866mil|Absolute=True">Pad K1-2(157.48mil,2551.181mil)  Top Layer</acronym></a></td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3528.756mil|Location2.X=3536.756mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3528.756mil|Location2.X=3536.756mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True">Track (552.756mil,2168.11mil)(552.756mil,5873.622mil)  Keep-Out Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3448.441mil|Location2.X=3535.181mil|Location1.Y=4397.496mil|Location2.Y=4444.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3448.441mil|Location2.X=3535.181mil|Location1.Y=4397.496mil|Location2.Y=4444.866mil|Absolute=True">Pad K1-1(511.811mil,2551.181mil)  Top Layer</acronym></a></td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3528.756mil|Location2.X=3536.756mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3528.756mil|Location2.X=3536.756mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True">Track (552.756mil,2168.11mil)(552.756mil,5873.622mil)  Keep-Out Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3448.441mil|Location2.X=3535.181mil|Location1.Y=4220.331mil|Location2.Y=4267.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3448.441mil|Location2.X=3535.181mil|Location1.Y=4220.331mil|Location2.Y=4267.701mil|Absolute=True">Pad K1-3(511.811mil,2374.016mil)  Top Layer</acronym></a></td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.535mil|Location2.X=3100.535mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.535mil|Location2.X=3100.535mil|Location1.Y=4034.11mil|Location2.Y=7747.622mil|Absolute=True">Track (116.535mil,2168.11mil)(116.535mil,5873.622mil)  Keep-Out Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E5%AF%B9%E5%A4%96%E9%A1%B9%E7%9B%AE\%E7%9A%AE%E8%82%A4%E7%83%AD%E7%96%97\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.11mil|Location2.X=3180.85mil|Location1.Y=4220.331mil|Location2.Y=4267.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.11mil|Location2.X=3180.85mil|Location1.Y=4220.331mil|Location2.Y=4267.701mil|Absolute=True">Pad K1-4(157.48mil,2374.016mil)  Top Layer</acronym></a></td>
-</tr>
-</table></a><a href="#top">Back to top</a><br><br></body>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
 </html>

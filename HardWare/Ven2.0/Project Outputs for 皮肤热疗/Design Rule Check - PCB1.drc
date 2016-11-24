@@ -1,59 +1,58 @@
 Protel Design System Design Rule Check
-PCB File : E:\对外项目\皮肤热疗\Ven2.0\PCB1.PcbDoc
-Date     : 2016/5/26
-Time     : 10:24:30
+PCB File : F:\对外部分项目\皮肤热疗\HardWare\Ven2.0\PCB1.PcbDoc
+Date     : 2016/11/24
+Time     : 22:48:36
 
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
-
-Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net NetK1_3 Between Pad K1-4 (157.48,2374.016mil) And Track on layer Bottom Layer (492,2374mil)
-   Violation between Un-Routed Net Constraint: Net KEY Between Pad C19-1 (380,2940mil) And Pad K2-4 (462.598,3069.291mil)
-   Violation between Un-Routed Net Constraint: Net AD Between Pad K1-2 (157.48,2551.181mil) And Arc on layer Top Layer (481.742,2540.797mil)
-Rule Violations :3
-
-Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
-   Violation between Pad J1-MH2(259.843mil,149.292mil)  Multi-Layer and 
-                     Pad J1-1(283.465mil,196.85mil)  Top Layer
-   Violation between Pad J1-MH1(409.449mil,149.292mil)  Multi-Layer and 
-                     Pad J1-5(385.827mil,196.85mil)  Top Layer
-   Violation between Track (116.535mil,2168.11mil)(116.535mil,5873.622mil)  Keep-Out Layer and 
-                     Pad K1-2(157.48mil,2551.181mil)  Top Layer
-   Violation between Track (552.756mil,2168.11mil)(552.756mil,5873.622mil)  Keep-Out Layer and 
-                     Pad K1-1(511.811mil,2551.181mil)  Top Layer
-   Violation between Track (552.756mil,2168.11mil)(552.756mil,5873.622mil)  Keep-Out Layer and 
-                     Pad K1-3(511.811mil,2374.016mil)  Top Layer
-   Violation between Track (116.535mil,2168.11mil)(116.535mil,5873.622mil)  Keep-Out Layer and 
-                     Pad K1-4(157.48mil,2374.016mil)  Top Layer
-Rule Violations :6
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=8mil) (Max=50mil) (Preferred=10mil) (All)
-Rule Violations :0
-
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=1mil) (Max=1000mil) (All)
-Rule Violations :0
-
-Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Silkscreen Over Component Pads (Clearance=0mil) (All),(All)
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=1000mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=50mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+   Violation between Clearance Constraint: (9.843mil < 10mil) Between Pad LED5-3(366.142mil,4264.764mil) on Top Layer And Pad LED5-4(366.142mil,4231.299mil) on Top Layer 
+   Violation between Clearance Constraint: (9.843mil < 10mil) Between Pad LED4-3(366.142mil,4028.543mil) on Top Layer And Pad LED4-4(366.142mil,3995.079mil) on Top Layer 
+   Violation between Clearance Constraint: (9.843mil < 10mil) Between Pad LED3-3(366.142mil,3792.323mil) on Top Layer And Pad LED3-4(366.142mil,3758.858mil) on Top Layer 
+   Violation between Clearance Constraint: (9.843mil < 10mil) Between Pad LED2-3(366.142mil,3556.102mil) on Top Layer And Pad LED2-4(366.142mil,3522.638mil) on Top Layer 
+   Violation between Clearance Constraint: (9.843mil < 10mil) Between Pad LED1-3(366.142mil,1892.323mil) on Top Layer And Pad LED1-4(366.142mil,1858.859mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Track (116.535mil,2168.11mil)(116.535mil,5823.622mil) on Keep-Out Layer And Pad K1-4(157.48mil,2374.016mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Track (552.756mil,2168.11mil)(552.756mil,5823.622mil) on Keep-Out Layer And Pad K1-3(511.811mil,2374.016mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Track (552.756mil,2168.11mil)(552.756mil,5823.622mil) on Keep-Out Layer And Pad K1-1(511.811mil,2551.181mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Track (116.535mil,2168.11mil)(116.535mil,5823.622mil) on Keep-Out Layer And Pad K1-2(157.48mil,2551.181mil) on Top Layer 
+   Violation between Clearance Constraint: (6.2mil < 10mil) Between Pad J1-MH1(409.449mil,149.292mil) on Multi-Layer And Pad J1-5(385.827mil,196.85mil) on Top Layer 
+   Violation between Clearance Constraint: (6.2mil < 10mil) Between Pad J1-MH2(259.843mil,149.292mil) on Multi-Layer And Pad J1-1(283.465mil,196.85mil) on Top Layer 
+Rule Violations :11
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net AD Between Pad K1-2(157.48mil,2551.181mil) on Top Layer And Pad K1-1(511.811mil,2551.181mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net KEY Between Pad C19-1(380mil,2940mil) on Top Layer And Pad K2-4(462.598mil,3069.291mil) on Multi-Layer 
+   Violation between Un-Routed Net Constraint: Net NetK1_3 Between Pad K1-4(157.48mil,2374.016mil) on Top Layer And Pad K1-3(511.811mil,2374.016mil) on Top Layer 
+Rule Violations :3
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 
-Violations Detected : 9
-Time Elapsed        : 00:00:03
+Violations Detected : 14
+Time Elapsed        : 00:00:02
